@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}About Page{% endblock %}
+
+{% block content %}
+<section class="card">
+    <h1>About This Project</h1>
+    <p>This Flask project demonstrates template inheritance and dynamic content using Jinja2.</p>
+    <p>The shared navigation and footer come from <code>base.html</code>.</p>
+    <a class="button" href="{{ url_for('home') }}">Back to Home</a>
+</section>
+{% endblock %}
